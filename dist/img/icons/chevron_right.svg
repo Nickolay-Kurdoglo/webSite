@@ -1,0 +1,12 @@
+<svg >
+    <symbol id="chevron_right" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_85_418)">
+            <path d="M10.7651 9L9.82507 9.94L12.8784 13L9.82507 16.06L10.7651 17L14.7651 13L10.7651 9Z" />
+        </g>
+        <defs>
+            <clipPath id="clip0_85_418">
+                <rect width="24" height="24"/>
+            </clipPath>
+        </defs>
+    </symbol>
+</svg>

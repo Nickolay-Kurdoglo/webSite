@@ -1,0 +1,7 @@
+@mixin text_style($fontSize, $fontWeight, $lineHeight: 140%, $case: none, $fontStyle:normal) {
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    font-style: $fontStyle;
+    text-transform: $case;
+    line-height: $lineHeight;
+}

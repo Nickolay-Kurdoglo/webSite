@@ -1,0 +1,51 @@
+.t-h1, 
+.t-h2,
+.t-h3,
+.t-h4,
+.t-h5 {
+    font-family: $f_primary;
+}
+
+.t-h1 {
+    @include text_style(56px, 600, 72px);
+}
+
+.t-h2 {
+    @include text_style(48px, 600, 64px);
+}
+
+.t-h3 {
+    @include text_style(40px, 600, 48px);
+}
+
+.t-h4 {
+    @include text_style(32px, 600, 40px);
+}
+
+.t-h5 {
+    @include text_style(24px, 600, 32px);
+}
+
+.t-h6 {
+    @include text_style(18px, 500, 24px);
+    font-family: $f_secondary;
+}
+
+.t-p,
+.t-link {
+    @include text_style(16px, 400, 160%);
+    font-family: $f_secondary;
+}
+
+.t-link {
+    cursor: pointer;
+    color: $c-primary;
+}
+
+.t-descr {
+    @include text_style(15px, 300, 130%);
+}
+
+.t-caption {
+    @include text_style(12px, 300, 165%);
+}

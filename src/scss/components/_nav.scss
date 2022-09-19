@@ -1,0 +1,51 @@
+.nav {
+
+    display: flex;
+    position: relative;
+    z-index: 2001;
+
+    &__item {
+        
+        padding: 8px 4px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        cursor: default;
+        
+        svg {
+            margin: 0 0 0 4px;
+            transition: .2s;
+        }
+
+        .dropdown-menu {
+
+            &__list {
+                display: none;
+                position: absolute;
+                top: 40px;
+                left: 4px;
+                overflow: hidden;
+                background-color: #fff;
+                border-radius: 4px;
+                box-shadow: 0px 4px 12px #00000010;
+            }
+
+            &__item {
+                width: 96px;
+                padding: 4px 8px;
+            }
+
+            &__item:hover {
+                background-color: $c-light-blue-97;
+            }
+        }
+    }
+
+    &__item:hover > svg {
+        transform: rotate(90deg);
+    }
+
+    &__item.dropdown-menu:hover > .dropdown-menu__list {
+        display: block;
+    }
+}

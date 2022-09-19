@@ -1,0 +1,15 @@
+@import "mixins";                   // Миксины
+
+@import "variables";                // Переменные
+
+@import "reset";                    // Обнуленние стилей
+
+@import "fonts";                    // Подключение шрифтов
+
+@import "typography";               // Текстовые стили
+
+@import "components/components";    // Компоненты
+
+hr {
+    margin: 24px 0;
+}

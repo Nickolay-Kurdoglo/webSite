@@ -1,0 +1,32 @@
+.tags {
+
+    &__list {
+        display: flex;
+        
+        .tag {
+            border-radius: 19px;
+            border: 2px solid $c-light-blue-80;
+            background-color: $c-light-blue-97;
+            cursor: pointer;
+            transition: .2s;
+
+            label {
+                display: block;
+                cursor: pointer;
+                padding: 6px 16px;
+            }
+            
+            input[type="checkbox"] {
+                display: none;
+            }
+        }
+
+        .tag:has(input[type="checkbox"]:checked) {
+            border: 2px solid $c-primary;
+            
+            label {
+                color: $c-primary;
+            }
+        }
+    }
+}

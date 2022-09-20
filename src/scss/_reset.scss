@@ -5,6 +5,10 @@
     font-family: $f_secondary;
 }
 
+body {
+    overflow: hidden;
+}
+
 ul li {
     list-style: none;
 }

@@ -172,5 +172,59 @@
 }
 
 .article {
+    display: flex;
+    width: 956px;
+    height: 240px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: $s-card-2;
+    transition: .2s;
     
+    &:hover {
+        box-shadow: $s-card;
+    }
+
+    &__preview {
+        width: 32%;
+        height: 100%;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__content {
+        width: 68%;
+        height: 100%;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__heading {
+        margin: 0 0 8px 0;
+    }
+
+    &__link {
+
+        display: flex;
+        justify-content: end;
+    }
+
+    &__info {
+        margin-top: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__tags {
+        display: flex;
+    }
 }

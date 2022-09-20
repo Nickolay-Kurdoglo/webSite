@@ -1,3 +1,42 @@
-<header class="header">
-    
+<header class="header" id="header">
+    <div class="wrapper">
+        <div class="header__logo">
+            <h3 class="t-h3">logo</h3>
+        </div>
+        <div class="header__interaction">
+            <svg class="header__close">
+                <use href="@img/icons/close.svg#close"></use>
+            </svg>
+            <nav class="header__nav">
+                <ul class="nav">
+                    <li class="nav__item"><a href="#">Главная</a></li>
+                    <li class="nav__item dropdown-menu">
+                        <div class="dropdown-menu__label">
+                            Услуги
+                            <svg>
+                                <use href="@img/icons/chevron_right.svg#chevron_right"></use>
+                            </svg>
+                        </div>
+                        <ul class="dropdown-menu__list">
+                            <li class="dropdown-menu__item">Link 1</li>
+                            <li class="dropdown-menu__item">Link 2</li>
+                            <li class="dropdown-menu__item">Link 3</li>
+                            <li class="dropdown-menu__item">Link 4</li>
+                            <li class="dropdown-menu__item">Link 5</li>
+                        </ul>
+                    <li class="nav__item"><a href="#">Портфолио</a></li>
+                    <li class="nav__item"><a href="#">Блог</a></li>
+                    <li class="nav__item"><a href="#">О нас</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__contact">
+                <a href="tel:+79999999999">+79999999999</a>
+                <button class="btn btn-primary outlined">Связаться с нами</button>
+            </div>
+        </div>
+        <svg class="header__burger-menu">
+            <use href="@img/icons/burger_menu.svg#burger_menu"></use>
+        </svg>
+    </div>
 </header>

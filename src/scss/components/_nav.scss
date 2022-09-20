@@ -1,6 +1,7 @@
 .nav {
 
     display: flex;
+    gap: 24px;
     position: relative;
     z-index: 2001;
 
@@ -19,9 +20,15 @@
 
         .dropdown-menu {
 
+            &__label {
+                display: flex;
+                align-items: center;
+            }
+
             &__list {
                 display: none;
                 position: absolute;
+                z-index: 3000;
                 top: 40px;
                 left: 4px;
                 overflow: hidden;
@@ -41,7 +48,7 @@
         }
     }
 
-    &__item:hover > svg {
+    &__item:hover .dropdown-menu__label > svg {
         transform: rotate(90deg);
     }
 

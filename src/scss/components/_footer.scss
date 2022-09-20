@@ -35,7 +35,7 @@
     }
 
     &__navigation {
-        flex: 6 1 auto;
+        flex: 9 1 auto;
     }
 
     &__nav {
@@ -57,7 +57,7 @@
     }
 
     &__contacts {
-        flex: 6 1 auto;
+        flex: 9 1 auto;
 
         .contact {
             display: flex;
@@ -92,5 +92,10 @@
         .t-p {
             text-align: center;
         }
+    }
+
+    svg {
+        stroke: #fff;
+        fill: none;
     }
 }

@@ -39,7 +39,7 @@
         display: none;
     }
 
-    @media screen and (max-width: 1080px) {
+    @media screen and (max-width: $bp-laptop) {
 
         &__interaction {
             width: 284px;

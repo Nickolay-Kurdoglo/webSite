@@ -74,3 +74,9 @@
         bottom: -20px;
     }
 }
+
+textarea.textField__input {
+    resize: vertical;
+    min-height: 40px;
+    max-height: 250px;
+}

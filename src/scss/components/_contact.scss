@@ -1,0 +1,42 @@
+.contact-form {
+    margin: $sz-btw-block;
+    display: flex;
+    justify-content: center;
+
+    .wrapper {
+        max-width: 1064px;
+    }
+
+    .contactForm {
+        padding: 32px 48px;
+        display: flex;
+        flex-flow: row wrap;
+        gap: 32px;
+        border-radius: 16px;
+        box-shadow: 0px 12px 40px -4px rgba(0, 0, 0, 0.12);
+    }
+
+    &__text {
+        flex: 1 1 350px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .t-h3 {
+            color: $c-dark-blue;
+        }
+    }
+
+    &__form {
+        flex: 1 1 330px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__send {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}

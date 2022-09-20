@@ -1,0 +1,38 @@
+.features {
+    margin: $sz-btw-block;
+
+    .wrapper {
+        max-width: 1080px;
+        padding: 0 32px;
+    }
+
+    .t-h4 {
+        margin: 0 0 24px 0;
+        padding: 0 0 24px 0;
+        position: relative;
+        color: $c-dark-blue;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 56px;
+            width: 72px;
+            height: 2px;
+            background-color: $c-primary;
+        }
+    }
+
+    &__container {
+        display: flex;
+        justify-content: stretch;
+        flex-flow: row wrap;
+        gap: 48px;
+
+        .feature {
+            flex: 1 1 406px;
+        }
+    }
+
+
+}

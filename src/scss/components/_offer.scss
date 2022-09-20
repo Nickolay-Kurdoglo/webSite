@@ -60,6 +60,10 @@
         }
     }
 
+    @media screen and (max-width: 512px) {
+        padding: 160px 0 0 0;
+    }
+
 }
 
 @keyframes mouseScrolling {

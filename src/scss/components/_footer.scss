@@ -1,0 +1,96 @@
+.footer {
+    padding: 24px 0;
+    background-color: $c-dark-blue;
+
+    & * {
+        color: #fff;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__content {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 64px;
+    }
+
+    &__heading {
+        padding: 0 0 0 10px;
+        margin: 0 0 16px 0;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 2px;
+            background-color: $c-accent;
+        }
+    }
+
+    &__navigation {
+        flex: 6 1 auto;
+    }
+
+    &__nav {
+
+        .nav {
+            display: flex;
+            gap: 32px;
+
+            &__column {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            &__item {
+                padding: 0;
+            }
+        }
+    }
+
+    &__contacts {
+        flex: 6 1 auto;
+
+        .contact {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+    }
+
+    &__contact-list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__other {
+        flex: 1 1 300px;
+        display: flex;
+        gap: 16px;
+        flex-direction: column;
+
+        a {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    hr {
+        margin: 24px 0;
+    }
+
+    &__copyright {
+        .t-p {
+            text-align: center;
+        }
+    }
+}

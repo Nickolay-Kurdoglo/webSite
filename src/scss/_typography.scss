@@ -49,3 +49,20 @@
 .t-caption {
     @include text_style(12px, 300, 165%);
 }
+
+.t-h4.heading {
+    margin: 0 0 24px 0;
+    padding: 0 0 24px 0;
+    position: relative;
+    color: $c-dark-blue;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 90%;
+        width: 72px;
+        height: 2px;
+        background-color: $c-primary;
+    }
+}

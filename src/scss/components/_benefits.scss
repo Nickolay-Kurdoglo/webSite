@@ -1,0 +1,48 @@
+.benefits {
+    height: 732px;
+    padding: 80px 0 72px 0;
+    position: relative;
+    overflow: hidden;
+
+    .wrapper {
+        max-width: 1080px;
+        padding: 0 32px;
+    }
+
+    &__list {
+        max-width: 420px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__item {
+        position: relative;
+
+        .t-h5 {
+            margin: 0 0 8px 0;
+        }
+
+        &:not(:first-child) {
+            &::before {
+                width: 100%;
+                content: "";
+                position: absolute;
+                top: -10px;
+                left: 0;
+                height: 2px;
+                background-color: #c4c4c4;
+            }
+        }
+    }
+
+    &__video {
+        z-index: -12;
+        position: absolute;
+        top: 0;
+        right: -224px;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}

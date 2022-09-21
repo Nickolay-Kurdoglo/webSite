@@ -35,3 +35,7 @@ svg {
     width: 24px;
     height: 24px;
 }
+
+body:has(.modal.opened) {
+    overflow: hidden;
+}

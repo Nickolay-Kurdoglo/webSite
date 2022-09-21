@@ -1,11 +1,13 @@
-.header {
+body:has(.offer) .header {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    padding: 24px 0;
-    z-index: 1400;
+    z-index: 20000;
+}
 
+.header {
+    padding: 24px 0;
     .wrapper {
         display: flex;
         justify-content: space-between;
@@ -46,6 +48,7 @@
             background-color: rgba($color: #141c3d, $alpha: 0.4);
             width: 100vw;
             height: 100vh;
+            z-index: 20000;
             top: 0;
             left: 0;
         }
@@ -54,7 +57,7 @@
             display: none;
             padding: 24px 40px;
             position: fixed;
-            z-index: 6000;
+            z-index: 20001;
             inset: 0 0 0 40%;
             flex-direction: column;
             display: flex;
@@ -113,5 +116,11 @@
         &__burger-menu {
             display: block;
         }
+    }
+}
+
+@supports (backdrop-filter: blur(8px)) {
+    .header__filter {
+        backdrop-filter: blur(8px)
     }
 }

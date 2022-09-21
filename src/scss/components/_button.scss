@@ -9,34 +9,61 @@
     font-family: $f_secondary;
 
     @include text_style(16px, 500, 150%);
+
+    &-float {
+        position: fixed;
+        right: 48px;
+        bottom: 48px;
+        z-index: 2000;
+        background: linear-gradient(110deg, #295ce1 8%, #6a8eed 16%, #295ce1 24%, #295ce1 100%);
+        background-size: 200% 200%;
+        background-position: -100px 0;
+        box-shadow: 0 8px 16px #153a9a36;
+    }
+
+    &:hover {
+        background-color: #295CE1;
+    }
+    
+    &:active {
+        background-color: #497AFA;
+    }
+    
+    &:disabled {
+        background-color: #9AB6FE;
+    }
+
+    &.outlined {
+        color: $c-primary;
+        background-color: #ffffff00;
+        border: 1px solid $c-primary;
+    }
+    
+    &.outlined:hover {
+        color: #FFFFFF;
+        background-color: #497AFA;
+        border: 1px solid #497AFA;
+    }
+    
+    &.outlined:active {
+        color: #FFFFFF;
+        background-color: #9AB6FE;
+        border: 1px solid #9AB6FE;
+    }
 }
 
-.btn:hover {
-    background-color: #295CE1;
+.btn-shining {
+    animation: shining 3s infinite cubic-bezier(0.93, 0.13, 0.19, 0.89) 3s;
 }
 
-.btn:active {
-    background-color: #497AFA;
+@keyframes shining {
+    0% {
+        background-position: -100px 0;
+    }
+
+    100% {
+        background-position: 160px 0;        
+    }
+
 }
 
-.btn:disabled {
-    background-color: #9AB6FE;
-}
-
-.btn.outlined {
-    color: $c-primary;
-    background-color: #ffffff00;
-    border: 1px solid $c-primary;
-}
-
-.btn.outlined:hover {
-    color: #FFFFFF;
-    background-color: #497AFA;
-    border: 1px solid #497AFA;
-}
-
-.btn.outlined:active {
-    color: #FFFFFF;
-    background-color: #9AB6FE;
-    border: 1px solid #9AB6FE;
-}

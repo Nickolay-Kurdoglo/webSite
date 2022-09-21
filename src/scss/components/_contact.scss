@@ -38,5 +38,11 @@
         display: flex;
         justify-content: space-between;
     }
+
+    @media screen and (max-width: $bp-phone) {
+        .contactForm {
+            padding: 24px;
+        }
+    }
     
 }

@@ -41,23 +41,33 @@
 
     @media screen and (max-width: $bp-laptop) {
 
-        &__interaction {
-            width: 284px;
+        &__interaction.opened ~ &__filter {
+            position: fixed;
+            background-color: rgba($color: #141c3d, $alpha: 0.4);
+            width: 100vw;
             height: 100vh;
+            top: 0;
+            left: 0;
+        }
+
+        &__interaction {
+            display: none;
             padding: 24px 40px;
             position: fixed;
-            top: 0;
-            right: -284px;
+            z-index: 6000;
+            inset: 0 0 0 40%;
             flex-direction: column;
             display: flex;
             align-items: stretch;
             justify-content: space-between;
             background-color: #ffffff;
             transition: .2s;
+            transform: translateX(100%);
 
             &.opened {
-                right: 0;
-                box-shadow: -12px 0 40px rgba(16, 81, 172, .46);
+                display: flex;
+                box-shadow: -12px 0 40px rgb(26, 67, 125 ,.46);
+                transform: translateX(0);
             }
 
             .dropdown-menu {
@@ -65,13 +75,12 @@
 
                 &__list {
                     position: relative;
-                    top: 2px;
+                    top: 8px;
                     left: 0;
                     box-shadow: none;
                 }
 
                 &__item {
-
                     &:hover {
                         background: none;
                     }

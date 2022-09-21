@@ -5,8 +5,13 @@
     font-family: $f_secondary;
 }
 
+html {
+    height: -webkit-fill-available;
+}
+
 body {
     overflow-x: hidden;
+    height: -webkit-fill-available;
 }
 
 ul li {

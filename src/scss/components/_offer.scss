@@ -1,6 +1,6 @@
 .offer {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     position: relative;
     padding: 300px 0 0 0;
 
@@ -60,7 +60,7 @@
         }
     }
 
-    @media screen and (max-width: 512px) {
+    @media screen and (max-width: $bp-phone) {
         padding: 160px 0 0 0;
     }
 

@@ -40,7 +40,6 @@
 }
 
 .service {
-    width: 436px;
     padding: 48px 64px;
     box-shadow: $s-card;
     display: flex;
@@ -104,9 +103,9 @@
         &::before {
             content: "";
             position: absolute;
-            width: 65%;
-            height: 10px;
-            border-radius: 5px;
+            width: 55%;
+            height: 8px;
+            border-radius: 4px;
             background: $g-g-blue;
         }
     }

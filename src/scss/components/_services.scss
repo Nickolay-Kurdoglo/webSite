@@ -1,0 +1,20 @@
+.services {
+    margin: $sz-btw-block;
+
+    .wrapper.services__heading {
+        max-width: 1080px;
+        padding: 0 32px;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        gap: 48px 32px;
+
+        .service {
+            flex: 1 10 350px;
+            max-width: 460px;
+        }
+    }
+}

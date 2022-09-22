@@ -17,7 +17,7 @@
 <body>
 
     <button class="btn btn-float btn-shining js-open-modal">Свяжитесь с нами</button>
-    
+
     <section class="modal" id="modal">
     <div class="modal__filter"></div>
     <div class="modal__container">
@@ -92,20 +92,25 @@
 
         </form>
     </div>
-</section> <!-- modal -->
+</section>
+    <!-- modal -->
 
     <header class="header" id="header">
     <div class="wrapper">
         <div class="header__logo">
-            <h3 class="t-h3">logo</h3>
+            <a href="index.html">
+                <h3 class="t-h3">logo</h3>
+            </a>
         </div>
         <div class="header__interaction">
-            <svg class="header__close">
-                <use href="img/icons/close.svg#close"></use>
-            </svg>
+            <div class="header__close">
+                <svg>
+                    <use href="img/icons/close.svg#close"></use>
+                </svg>
+            </div>            
             <nav class="header__nav">
                 <ul class="nav">
-                    <li class="nav__item"><a href="#">Главная</a></li>
+                    <li class="nav__item"><a href="index.html">Главная</a></li>
                     <li class="nav__item dropdown-menu">
                         <div class="dropdown-menu__label">
                             Услуги
@@ -120,62 +125,30 @@
                             <li class="dropdown-menu__item">Link 4</li>
                             <li class="dropdown-menu__item">Link 5</li>
                         </ul>
-                    <li class="nav__item"><a href="#">Портфолио</a></li>
-                    <li class="nav__item"><a href="#">Блог</a></li>
-                    <li class="nav__item"><a href="#">О нас</a></li>
+                    <li class="nav__item"><a href="portfolio.html">Портфолио</a></li>
+                    <li class="nav__item"><a href="blog.html">Блог</a></li>
+                    <li class="nav__item"><a href="about-us.html">О нас</a></li>
                 </ul>
             </nav>
 
             <div class="header__contact">
                 <a href="tel:+79999999999">+79999999999</a>
-                <button class="btn btn-primary outlined">Связаться с нами</button>
+                <button class="btn outlined js-open-modal">Связаться с нами</button>
             </div>
         </div>
         <div class="header__filter"></div>
-        <svg class="header__burger-menu">
-            <use href="img/icons/burger_menu.svg#burger_menu"></use>
-        </svg>
-    </div>
-</header> <!-- Header -->
-    
-    <section class="offer">
-
-    <div class="wrapper">
-        <div class="offer__accent">
-            <h1 class="t-h1">
-                Заголовок УТП -
-                мб 2 строка
-            </h1>
-            <p class="t-p">
-                Таким образом, разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение
-                существующих финансовых. разбавленное изрядной долей эмпатии.
-            </p>
-            <button class="btn btn-primary js-open-modal">
-                Связаться с нами
-            </button>
-        </div>
-
-        <div class="offer__bottom">
-            <svg class="offer__mouse" width="24" height="32" viewBox="0 0 24 32" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M20 22C20 24.1217 19.1571 26.1566 17.6569 27.6569C16.1566 29.1571 14.1217 30 12 30C9.87827 30 7.84344 29.1571 6.34315 27.6569C4.84285 26.1566 4 24.1217 4 22V10C4 7.87827 4.84285 5.84344 6.34315 4.34315C7.84344 2.84285 9.87827 2 12 2C14.1217 2 16.1566 2.84285 17.6569 4.34315C19.1571 5.84344 20 7.87827 20 10V22ZM12 0C9.34784 0 6.8043 1.05357 4.92893 2.92893C3.05357 4.8043 2 7.34784 2 10V22C2 24.6522 3.05357 27.1957 4.92893 29.0711C6.8043 30.9464 9.34784 32 12 32C14.6522 32 17.1957 30.9464 19.0711 29.0711C20.9464 27.1957 22 24.6522 22 22V10C22 7.34784 20.9464 4.8043 19.0711 2.92893C17.1957 1.05357 14.6522 0 12 0Z"
-                    fill="black" fill-opacity="0.83" />
-                <path id="mouse-wheel"
-                    d="M12.7071 6.29289C12.5196 6.10536 12.2652 6 12 6C11.7348 6 11.4804 6.10536 11.2929 6.29289C11.1054 6.48043 11 6.73478 11 7V11C11 11.2652 11.1054 11.5196 11.2929 11.7071C11.4804 11.8946 11.7348 12 12 12C12.2652 12 12.5196 11.8946 12.7071 11.7071C12.8946 11.5196 13 11.2652 13 11V7C13 6.73478 12.8946 6.48043 12.7071 6.29289Z" />
+        <div class="header__burger-menu">
+            <svg class="">
+                <use href="img/icons/burger_menu.svg#burger_menu"></use>
             </svg>
-
-            <p class="t-p">Прокрутите вниз</p>
         </div>
+        
     </div>
+</header>
+    <!-- Header -->
 
-    <div class="offer__filter"></div>
-    <video muted autoplay loop poster="img/waves _thumbnail.png" class="offer__video">
-        <source src="files/video/waves_1-compressed.mp4" type="video/mp4">
-    </video>
-</section> <!-- offer -->
-    
     <section class="features">
-    <div class="wrapper">
+    <div class="wrapper narrow">
         <div class="t-h4 heading">
             Наши преимущества
         </div>
@@ -225,134 +198,89 @@
             </div>
         </div>
     </div>
-</section> <!-- features -->
+</section>
+    <!-- features -->
 
-    <section class="benefits">
-    <div class="wrapper">
-        <div class="t-h4 heading">
-            Чем мы можем помочь вашему бизнесу
-        </div>
-        <ul class="benefits__list">
-            <li class="benefits__item">
-                <h5 class="t-h5">Наше предложение</h5>
-                <p class="t-descr">
-                    Семантический разбор внешних противодействий не даёт нам иного выбора, кроме определения анализа существующих паттернов поведения. 
-                </p>
-            </li>
-
-            <li class="benefits__item">
-                <h5 class="t-h5">Наше предложение</h5>
-                <p class="t-descr">
-                    Семантический разбор внешних противодействий не даёт нам иного выбора, кроме определения анализа существующих паттернов поведения. 
-                </p>
-            </li>
-
-            <li class="benefits__item">
-                <h5 class="t-h5">Наше предложение</h5>
-                <p class="t-descr">
-                    Семантический разбор внешних противодействий не даёт нам иного выбора, кроме определения анализа существующих паттернов поведения. 
-                </p>
-            </li>
-
-            <li class="benefits__item">
-                <h5 class="t-h5">Наше предложение</h5>
-                <p class="t-descr">
-                    Семантический разбор внешних противодействий не даёт нам иного выбора, кроме определения анализа существующих паттернов поведения. 
-                </p>
-            </li>
-        </ul>
-    </div>
-    <video muted autoplay loop poster="" class="benefits__video">
-        <source src="files/video/benefit-scene_23.04.2022_V3.mp4" type="video/mp4">
-    </video>
-</section> <!-- benefits -->
-
-    <section class="services">
-    <div class="wrapper services__heading">
-        <div class="t-h4 heading">
-            Наши услуги
-        </div>
-    </div>
-    <div class="wrapper services__container">
-        <div class="service">
-            <div class="service__info">
-                <div class="t-h5">Разработка сайта</div>
-                <p class="t-descr">
-                    Краткое, емкое описание некоторой услуги. Строка должна быть высотой в 3 строки, максимум 4.
-                </p>
-            </div>
-            <div class="service__price sale">
-                <p class="t-h5">от 100 000 ₽</p>
-                <p class="">от 200 000 ₽</p>
+    <section class="team">
+        <div class="wrapper narrow">
+            <div class="t-h4 heading">
+                Наша команда
             </div>
         </div>
 
-        <div class="service">
-            <div class="service__info">
-                <div class="t-h5">Разработка сайта</div>
-                <p class="t-descr">
-                    Краткое, емкое описание некоторой услуги. Строка должна быть высотой в 3 строки, максимум 4.
-                </p>
-            </div>
-            <div class="service__price">
-                <p class="t-h5">от 100 000 ₽</p>
-                <p class="">от 200 000 ₽</p>
-            </div>
-        </div>
+        <div class="wrapper team__list">
 
-        <div class="service">
-            <div class="service__info">
-                <div class="t-h5">Разработка сайта</div>
-                <p class="t-descr">
-                    Краткое, емкое описание некоторой услуги. Строка должна быть высотой в 3 строки, максимум 4.
-                </p>
+            <div class="member">
+                <div class="member__photo">
+                    <img src="img/avatars/avatar_nick.jpg" alt="">
+                </div>
+                <p class="member__name t-h6">Курдогло Николай</p>
+                <p class="member__position t-caption">UX UI | Frontend</p>
+                <a href="mailto:kolya.kurdoglo.182@gmail.com" class="t-descr">kolya.kurdoglo.182@gmail.com</a>
             </div>
-            <div class="service__price">
-                <p class="t-h5">от 100 000 ₽</p>
-                <p class="">от 200 000 ₽</p>
-            </div>
-        </div>
 
-        <div class="service">
-            <div class="service__info">
-                <div class="t-h5">Разработка сайта</div>
-                <p class="t-descr">
-                    Краткое, емкое описание некоторой услуги. Строка должна быть высотой в 3 строки, максимум 4.
-                </p>
+            <div class="member">
+                <div class="member__photo">
+                    <img src="img/avatars/avatar_artem.jpg" alt="">
+                </div>
+                <p class="member__name t-h6">Зимин Артем</p>
+                <p class="member__position t-caption">Fullstack</p>
+                <a href="mailto:zimin.arte2014@yandex.ru" class="t-descr">zimin.arte2014@yandex.ru</a>
             </div>
-            <div class="service__price">
-                <p class="t-h5">от 100 000 ₽</p>
-                <p class="">от 200 000 ₽</p>
-            </div>
-        </div>
 
-        <div class="service">
-            <div class="service__info">
-                <div class="t-h5">Разработка сайта</div>
-                <p class="t-descr">
-                    Краткое, емкое описание некоторой услуги. Строка должна быть высотой в 3 строки, максимум 4.
-                </p>
+            <div class="member">
+                <div class="member__photo">
+                    <img src="img/avatars/ivan.png" alt="">
+                </div>
+                <p class="member__name t-h6">Иванов Иван</p>
+                <p class="member__position t-caption">Fullstack</p>
+                <a href="mailto:ivanov.v@yandex.ru" class="t-descr">ivanov.v@yandex.ru</a>
             </div>
-            <div class="service__price">
-                <p class="t-h5">от 100 000 ₽</p>
-                <p class="">от 200 000 ₽</p>
-            </div>
-        </div>
 
-        <div class="service">
-            <div class="service__info">
-                <div class="t-h5">Разработка сайта</div>
-                <p class="t-descr">
-                    Краткое, емкое описание некоторой услуги. Строка должна быть высотой в 3 строки, максимум 4.
-                </p>
+            <div class="member">
+                <div class="member__photo">
+                    <img src="img/avatars/piotr.png" alt="">
+                </div>
+                <p class="member__name t-h6">Петров Петр</p>
+                <p class="member__position t-caption">Fullstack</p>
+                <a href="mailto:petrov.p@yandex.ru" class="t-descr">petrov.p@yandex.ru</a>
             </div>
-            <div class="service__price">
-                <p class="t-h5">от 100 000 ₽</p>
-                <p class="">от 200 000 ₽</p>
-            </div>
+
         </div>
-    </div>
-</section> <!-- services -->
+    </section>
+
+    <section class="contacts">
+        <div class="wrapper narrow">
+            <div class="t-h4 heading">
+                Контакты
+            </div>
+            <ul class="contacts__list">
+                <li class="contacts__item">
+                    <div class="item__icon">
+                        <svg>
+                            <use href="img/icons/mail.svg#mail"></use>
+                        </svg>
+                    </div>
+                    <div class="item__info">
+                        <p class="t-p">Почта:</p>
+                        <a href="mailto:" class="t-h6">example@example.com</a>
+                    </div>
+                </li>
+
+                <li class="contacts__item">
+                    <div class="item__icon">
+                        <svg>
+                            <use href="img/icons/phone.svg#phone"></use>
+                        </svg>
+                    </div>
+                    <div class="item__info">
+                        <p class="t-p">Телефон:</p>
+                        <a href="mailto:" class="t-h6">+7 983 442 34 23</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
 
     <section class="contact-form">
     <div class="wrapper">
@@ -422,16 +350,17 @@
 
                 <div class="contact-form__send">
                     <div class="checkbox">
-                        <input type="checkbox" id="cbx-1">
-                        <label class="checkbox__label" for="cbx-1">Я согласен на обработку персональных данных</label>
+                        <input type="checkbox" id="privacy-policy">
+                        <label name="privacy" class="checkbox__label" for="privacy-policy">Я согласен на обработку персональных данных</label>
                     </div>
                     <button class="btn btn-primary" type="submit">Отправить</button>
                 </div>
             </form>
         </div>
     </div>
-</section> <!-- contact form -->
-    
+</section>
+    <!-- contact form -->
+
     <footer class="footer">
     <div class="wrapper">
         <div class="footer__content">
@@ -495,7 +424,8 @@
             </p>
         </div>
     </div>
-</footer> <!-- Footer -->
+</footer>
+    <!-- Footer -->
 
     <script src="js/script.min.js"></script>
 </body>

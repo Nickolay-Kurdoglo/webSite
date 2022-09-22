@@ -97,12 +97,16 @@
     <header class="header" id="header">
     <div class="wrapper">
         <div class="header__logo">
-            <h3 class="t-h3">logo</h3>
+            <a href="index.html">
+                <h3 class="t-h3">logo</h3>
+            </a>
         </div>
         <div class="header__interaction">
-            <svg class="header__close">
-                <use href="img/icons/close.svg#close"></use>
-            </svg>
+            <div class="header__close">
+                <svg>
+                    <use href="img/icons/close.svg#close"></use>
+                </svg>
+            </div>            
             <nav class="header__nav">
                 <ul class="nav">
                     <li class="nav__item"><a href="index.html">Главная</a></li>
@@ -121,20 +125,23 @@
                             <li class="dropdown-menu__item">Link 5</li>
                         </ul>
                     <li class="nav__item"><a href="portfolio.html">Портфолио</a></li>
-                    <li class="nav__item"><a href="#">Блог</a></li>
-                    <li class="nav__item"><a href="#">О нас</a></li>
+                    <li class="nav__item"><a href="blog.html">Блог</a></li>
+                    <li class="nav__item"><a href="about-us.html">О нас</a></li>
                 </ul>
             </nav>
 
             <div class="header__contact">
                 <a href="tel:+79999999999">+79999999999</a>
-                <button class="btn btn-primary outlined">Связаться с нами</button>
+                <button class="btn outlined js-open-modal">Связаться с нами</button>
             </div>
         </div>
         <div class="header__filter"></div>
-        <svg class="header__burger-menu">
-            <use href="img/icons/burger_menu.svg#burger_menu"></use>
-        </svg>
+        <div class="header__burger-menu">
+            <svg class="">
+                <use href="img/icons/burger_menu.svg#burger_menu"></use>
+            </svg>
+        </div>
+        
     </div>
 </header> <!-- Header -->
     
@@ -175,7 +182,7 @@
 </section> <!-- offer -->
     
     <section class="features">
-    <div class="wrapper">
+    <div class="wrapper narrow">
         <div class="t-h4 heading">
             Наши преимущества
         </div>
@@ -228,7 +235,7 @@
 </section> <!-- features -->
 
     <section class="benefits">
-    <div class="wrapper">
+    <div class="wrapper narrow">
         <div class="t-h4 heading">
             Чем мы можем помочь вашему бизнесу
         </div>
@@ -268,7 +275,7 @@
 </section> <!-- benefits -->
 
     <section class="services">
-    <div class="wrapper services__heading">
+    <div class="wrapper narrow">
         <div class="t-h4 heading">
             Наши услуги
         </div>
@@ -422,8 +429,8 @@
 
                 <div class="contact-form__send">
                     <div class="checkbox">
-                        <input type="checkbox" id="cbx-1">
-                        <label class="checkbox__label" for="cbx-1">Я согласен на обработку персональных данных</label>
+                        <input type="checkbox" id="privacy-policy">
+                        <label name="privacy" class="checkbox__label" for="privacy-policy">Я согласен на обработку персональных данных</label>
                     </div>
                     <button class="btn btn-primary" type="submit">Отправить</button>
                 </div>

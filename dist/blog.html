@@ -147,10 +147,10 @@
 </header>
     <!-- Header -->
 
-    <section class="categories">
-        <div class="wrapper">
-            <h2 class="t-h2">Портфолио</h2>
-            <ul class="categories__list">
+    <section class="blog-filter">
+        <div class="wrapper blog-filter__categories">
+            <h2 class="t-h2">Блог</h2>
+            <ul class="blog-filter__list">
                 <li class="category active">
                     <a class="t-h5" href="#">Все</a>
                 </li>
@@ -168,126 +168,146 @@
                 </li>
             </ul>
         </div>
-    </section>
-    <section class="portfolio tags">
-        <div class="wrapper">
-            <ul class="tags__list">
-                <li class="tag">
-                    <input name="tag" id="markup" type="checkbox">
-                    <label for="markup">Верстка</label>
-                </li>
-                <li class="tag">
-                    <input name="tag" id="design" type="checkbox">
-                    <label for="design">Дизайн</label>
-                </li>
-                <li class="tag">
-                    <input name="tag" id="backend" type="checkbox">
-                    <label for="backend">Backend</label>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="cases">
-        <div class="wrapper">
-            <div class="case">
-                <div class="case__preview">
-                    <img src="img/case.png" alt="">
-                </div>
-                <div class="case__info">
-                    <p class="t-h4 case__heading">Кофешоп</p>
-                    <p class="t-p case__descr">
-                        Каждый из нас понимает очевидную вещь: новая модель организационной деятельности говорит о
-                        возможностях
-                        дальнейших направлений развития...
-                    </p>
-                    <div class="case__bottom">
-                        <a class="case__link link_button" href="#">
-                            Подробнее
-                            <svg>
-                                <use href="img/icons/chevron_right.svg#chevron_right"></use>
-                            </svg>
-                        </a>
-                        <p class="case__date t-caption">
-                            23.05.2022
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="case">
-                <div class="case__preview">
-                    <img src="img/case.png" alt="">
-                </div>
-                <div class="case__info">
-                    <p class="t-h4 case__heading">Кофешоп</p>
-                    <p class="t-p case__descr">
-                        Каждый из нас понимает очевидную вещь: новая модель организационной деятельности говорит о возможностях
-                        дальнейших направлений развития...
-                    </p>
-                    <div class="case__bottom">
-                        <a class="case__link link_button" href="#">
-                            Подробнее
-                            <svg>
-                                <use href="img/icons/chevron_right.svg#chevron_right"></use>
-                            </svg>
-                        </a>
-                        <p class="case__date t-caption">
-                            23.05.2022
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="case">
-                <div class="case__preview">
-                    <img src="img/case.png" alt="">
-                </div>
-                <div class="case__info">
-                    <p class="t-h4 case__heading">Кофешоп</p>
-                    <p class="t-p case__descr">
-                        Каждый из нас понимает очевидную вещь: новая модель организационной деятельности говорит о возможностях
-                        дальнейших направлений развития...
-                    </p>
-                    <div class="case__bottom">
-                        <a class="case__link link_button" href="#">
-                            Подробнее
-                            <svg>
-                                <use href="img/icons/chevron_right.svg#chevron_right"></use>
-                            </svg>
-                        </a>
-                        <p class="case__date t-caption">
-                            23.05.2022
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="case">
-                <div class="case__preview">
-                    <img src="img/case.png" alt="">
-                </div>
-                <div class="case__info">
-                    <p class="t-h4 case__heading">Кофешоп</p>
-                    <p class="t-p case__descr">
-                        Каждый из нас понимает очевидную вещь: новая модель организационной деятельности говорит о возможностях
-                        дальнейших направлений развития...
-                    </p>
-                    <div class="case__bottom">
-                        <a class="case__link link_button" href="#">
-                            Подробнее
-                            <svg>
-                                <use href="img/icons/chevron_right.svg#chevron_right"></use>
-                            </svg>
-                        </a>
-                        <p class="case__date t-caption">
-                            23.05.2022
-                        </p>
-                    </div>
-                </div>
+        <div class="blog-filter__tags tags">
+            <div class="wrapper">
+                <ul class="tags__list">
+                    <li class="tag">
+                        <input name="tag" id="markup" type="checkbox">
+                        <label for="markup">Верстка</label>
+                    </li>
+                    <li class="tag">
+                        <input name="tag" id="design" type="checkbox">
+                        <label for="design">Дизайн</label>
+                    </li>
+                    <li class="tag">
+                        <input name="tag" id="backend" type="checkbox">
+                        <label for="backend">Backend</label>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
+
+    <div class="wrapper">
+        <hr class="blog-separator">
+    </div>
+
+    <main class="articles">
+        <div class="wrapper articles__container">
+
+            <article class="article">
+                <div class="article__preview">
+                    <img src="img/article_preview.png" alt="">
+                </div>
+                <div class="article__content">
+                    <h5 class="t-h5 article__heading">
+                        Лучшие редакторы кода 2022
+                        вторая строка
+                    </h5>
+                    <p class="t-p article__descr">
+                        Для современного мира понимание сути ресурсосберегающих технологий однозначно фиксирует
+                        необходимость
+                        дальнейших направлений развития. Принимая во внимание показатели ...
+                    </p>
+
+                    <div class="article__info">
+                        <div class="article__link">
+                            <a class="  link_button" href="#">
+                                Подробнее
+                                <svg>
+                                    <use href="img/icons/chevron_right.svg#chevron_right"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="article__bottom">
+                            <ul class="article__tags">
+                                <li>Верстка</li>
+                                <li>Разработка</li>
+                            </ul>
+                            <p class="t-caption article__date">
+                                12 февраля 2022
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article">
+                <div class="article__preview">
+                    <img src="img/article_preview.png" alt="">
+                </div>
+                <div class="article__content">
+                    <h5 class="t-h5 article__heading">
+                        Лучшие редакторы кода 2022
+                        вторая строка
+                    </h5>
+                    <p class="t-p article__descr">
+                        Для современного мира понимание сути ресурсосберегающих технологий однозначно фиксирует
+                        необходимость
+                        дальнейших направлений развития. Принимая во внимание показатели ...
+                    </p>
+
+                    <div class="article__info">
+                        <div class="article__link">
+                            <a class="  link_button" href="#">
+                                Подробнее
+                                <svg>
+                                    <use href="img/icons/chevron_right.svg#chevron_right"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="article__bottom">
+                            <ul class="article__tags">
+                                <li>Верстка</li>
+                                <li>Разработка</li>
+                            </ul>
+                            <p class="t-caption article__date">
+                                12 февраля 2022
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article">
+                <div class="article__preview">
+                    <img src="img/article_preview.png" alt="">
+                </div>
+                <div class="article__content">
+                    <h5 class="t-h5 article__heading">
+                        Лучшие редакторы кода 2022
+                        вторая строка
+                    </h5>
+                    <p class="t-p article__descr">
+                        Для современного мира понимание сути ресурсосберегающих технологий однозначно фиксирует
+                        необходимость
+                        дальнейших направлений развития. Принимая во внимание показатели ...
+                    </p>
+
+                    <div class="article__info">
+                        <div class="article__link">
+                            <a class="  link_button" href="#">
+                                Подробнее
+                                <svg>
+                                    <use href="img/icons/chevron_right.svg#chevron_right"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="article__bottom">
+                            <ul class="article__tags">
+                                <li>Верстка</li>
+                                <li>Разработка</li>
+                            </ul>
+                            <p class="t-caption article__date">
+                                12 февраля 2022
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </main>
 
     <footer class="footer">
     <div class="wrapper">

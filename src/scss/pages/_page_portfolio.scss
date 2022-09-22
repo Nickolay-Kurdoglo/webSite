@@ -1,0 +1,41 @@
+.categories {
+    height: 232px;
+    padding: 48px 0;
+    background-image: $g-r-dark-blue;
+
+    * {
+        color: #fff
+    }
+
+    .t-h2 {
+        margin: 0 0 16px 0;
+    }
+
+    &__list {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 8px 48px;
+
+        .category {
+            &.active {
+                .t-h5 {
+                    color: $c-accent;
+                }
+            }
+        }
+    }
+}
+
+.cases {
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        gap: 24px;
+    }
+
+    .case {
+        flex: 1 1 315px;
+        max-width: 380px;
+    }
+}

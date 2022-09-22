@@ -10,13 +10,20 @@
 
 @import "components/components";    // Компоненты
 
+@import "pages/pages_style";         // Стили страниц
+
 hr {
     border: 1px solid rgba(255, 255, 255, 0.1);;
 }
 
 .wrapper {
-    max-width: 1440px;
+    max-width: 1240px;
     margin: 0 auto;
     padding: 0 24px;
+
+    &.narrow {
+        max-width: 1080px;
+        padding: 0 32px;
+    }
 }
 

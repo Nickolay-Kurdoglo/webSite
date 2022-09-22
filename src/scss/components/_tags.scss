@@ -1,7 +1,13 @@
 .tags {
+    padding: 32px 0;
+
+    * {
+        user-select: none;
+    }
 
     &__list {
         display: flex;
+        gap: 16px;
         
         .tag {
             border-radius: 19px;

@@ -1,11 +1,6 @@
 .services {
     margin: $sz-btw-block;
 
-    .wrapper.services__heading {
-        max-width: 1080px;
-        padding: 0 32px;
-    }
-
     &__container {
         display: flex;
         justify-content: center;

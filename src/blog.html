@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include("html/head.html", {
+"title" : "Главная"
+})
+
+<body>
+
+    <button class="btn btn-float btn-shining js-open-modal">Свяжитесь с нами</button>
+
+    @@include("html/modal.html", {})
+    <!-- modal -->
+
+    @@include("html/header.html", {})
+    <!-- Header -->
+
+    <section class="blog-filter">
+        <div class="wrapper blog-filter__categories">
+            <h2 class="t-h2">Блог</h2>
+            <ul class="blog-filter__list">
+                <li class="category active">
+                    <a class="t-h5" href="#">Все</a>
+                </li>
+
+                <li class="category ">
+                    <a class="t-h5" href="#">Дизайн</a>
+                </li>
+
+                <li class="category ">
+                    <a class="t-h5" href="#">Разработка</a>
+                </li>
+
+                <li class="category ">
+                    <a class="t-h5" href="#">Продвижение</a>
+                </li>
+            </ul>
+        </div>
+        <div class="blog-filter__tags tags">
+            <div class="wrapper">
+                <ul class="tags__list">
+                    <li class="tag">
+                        <input name="tag" id="markup" type="checkbox">
+                        <label for="markup">Верстка</label>
+                    </li>
+                    <li class="tag">
+                        <input name="tag" id="design" type="checkbox">
+                        <label for="design">Дизайн</label>
+                    </li>
+                    <li class="tag">
+                        <input name="tag" id="backend" type="checkbox">
+                        <label for="backend">Backend</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="wrapper">
+        <hr class="blog-separator">
+    </div>
+
+    <main class="articles">
+        <div class="wrapper articles__container">
+
+            <article class="article">
+                <div class="article__preview">
+                    <img src="@img/article_preview.png" alt="">
+                </div>
+                <div class="article__content">
+                    <h5 class="t-h5 article__heading">
+                        Лучшие редакторы кода 2022
+                        вторая строка
+                    </h5>
+                    <p class="t-p article__descr">
+                        Для современного мира понимание сути ресурсосберегающих технологий однозначно фиксирует
+                        необходимость
+                        дальнейших направлений развития. Принимая во внимание показатели ...
+                    </p>
+
+                    <div class="article__info">
+                        <div class="article__link">
+                            <a class="  link_button" href="#">
+                                Подробнее
+                                <svg>
+                                    <use href="@img/icons/chevron_right.svg#chevron_right"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="article__bottom">
+                            <ul class="article__tags">
+                                <li>Верстка</li>
+                                <li>Разработка</li>
+                            </ul>
+                            <p class="t-caption article__date">
+                                12 февраля 2022
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article">
+                <div class="article__preview">
+                    <img src="@img/article_preview.png" alt="">
+                </div>
+                <div class="article__content">
+                    <h5 class="t-h5 article__heading">
+                        Лучшие редакторы кода 2022
+                        вторая строка
+                    </h5>
+                    <p class="t-p article__descr">
+                        Для современного мира понимание сути ресурсосберегающих технологий однозначно фиксирует
+                        необходимость
+                        дальнейших направлений развития. Принимая во внимание показатели ...
+                    </p>
+
+                    <div class="article__info">
+                        <div class="article__link">
+                            <a class="  link_button" href="#">
+                                Подробнее
+                                <svg>
+                                    <use href="@img/icons/chevron_right.svg#chevron_right"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="article__bottom">
+                            <ul class="article__tags">
+                                <li>Верстка</li>
+                                <li>Разработка</li>
+                            </ul>
+                            <p class="t-caption article__date">
+                                12 февраля 2022
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article">
+                <div class="article__preview">
+                    <img src="@img/article_preview.png" alt="">
+                </div>
+                <div class="article__content">
+                    <h5 class="t-h5 article__heading">
+                        Лучшие редакторы кода 2022
+                        вторая строка
+                    </h5>
+                    <p class="t-p article__descr">
+                        Для современного мира понимание сути ресурсосберегающих технологий однозначно фиксирует
+                        необходимость
+                        дальнейших направлений развития. Принимая во внимание показатели ...
+                    </p>
+
+                    <div class="article__info">
+                        <div class="article__link">
+                            <a class="  link_button" href="#">
+                                Подробнее
+                                <svg>
+                                    <use href="@img/icons/chevron_right.svg#chevron_right"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="article__bottom">
+                            <ul class="article__tags">
+                                <li>Верстка</li>
+                                <li>Разработка</li>
+                            </ul>
+                            <p class="t-caption article__date">
+                                12 февраля 2022
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    @@include("html/footer.html", {})
+    <!-- Footer -->
+
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>

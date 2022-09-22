@@ -3,23 +3,24 @@ body:has(.offer) .header {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 20000;
+    z-index: 10000;
 }
 
 .header {
     padding: 24px 0;
+
+    &__logo {
+        flex: 1 1 auto;
+    }
+
     .wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    &__logo {
-        flex: 1 1 auto;
-    }
-
     &__interaction {
-        flex: 1 1 724px;
+        flex: 1 1 750px;
 
         display: flex;
         justify-content: space-between;
@@ -27,6 +28,7 @@ body:has(.offer) .header {
     }
 
     &__close {
+        padding: 8px;
         display: none;
     }
 
@@ -48,7 +50,7 @@ body:has(.offer) .header {
             background-color: rgba($color: #141c3d, $alpha: 0.4);
             width: 100vw;
             height: 100vh;
-            z-index: 20000;
+            z-index: 7000;
             top: 0;
             left: 0;
         }
@@ -74,7 +76,10 @@ body:has(.offer) .header {
             }
 
             .dropdown-menu {
+                padding: 8px;
                 display: block;
+                position: relative;
+                z-index: 7000;
 
                 &__list {
                     position: relative;
@@ -109,12 +114,20 @@ body:has(.offer) .header {
         &__close {
             display: block;
             position: absolute;
+            z-index: 7000;
             top: 24px;
             right: 24px;
         }
 
         &__burger-menu {
+            padding: 8px;
             display: block;
+        }
+    }
+
+    @media screen and (max-width: $bp-phone) {
+        &__interaction {
+            inset: 0 0 0 25%;
         }
     }
 }

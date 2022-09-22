@@ -1,0 +1,41 @@
+.blog-filter {
+    
+    &__categories {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    &__list {
+        display: flex;
+        gap: 24px;
+    }
+
+    .category {
+        &.active {
+            .t-h5 {
+                color: $c-primary;
+            }
+        }
+    }
+
+    .wrapper {
+        max-width: 1112px;
+    }
+
+}
+
+.blog-separator {
+    background-color: $c-primary;
+}
+
+.articles {
+    padding: 56px 0;
+
+    &__container {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        gap: 48px;
+    }
+}

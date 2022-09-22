@@ -36,7 +36,17 @@
 
     &__send {
         display: flex;
+        flex-wrap: wrap;
+        gap: 16px 8px;
         justify-content: space-between;
+        
+        .checkbox {
+            flex: 5 1 220px;
+        }
+
+        .btn {
+            flex: 1 1 160px;
+        }
     }
 
     @media screen and (max-width: $bp-phone) {

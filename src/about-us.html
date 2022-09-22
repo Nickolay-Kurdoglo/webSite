@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include("html/head.html", {
+"title" : "Главная"
+})
+
+<body>
+
+    <button class="btn btn-float btn-shining js-open-modal">Свяжитесь с нами</button>
+
+    @@include("html/modal.html", {})
+    <!-- modal -->
+
+    @@include("html/header.html", {})
+    <!-- Header -->
+
+    @@include("html/features.html", {})
+    <!-- features -->
+
+    <section class="team">
+        <div class="wrapper narrow">
+            <div class="t-h4 heading">
+                Наша команда
+            </div>
+        </div>
+
+        <div class="wrapper team__list">
+
+            <div class="member">
+                <div class="member__photo">
+                    <img src="@img/avatars/avatar_nick.jpg" alt="">
+                </div>
+                <p class="member__name t-h6">Курдогло Николай</p>
+                <p class="member__position t-caption">UX UI | Frontend</p>
+                <a href="mailto:kolya.kurdoglo.182@gmail.com" class="t-descr">kolya.kurdoglo.182@gmail.com</a>
+            </div>
+
+            <div class="member">
+                <div class="member__photo">
+                    <img src="@img/avatars/avatar_artem.jpg" alt="">
+                </div>
+                <p class="member__name t-h6">Зимин Артем</p>
+                <p class="member__position t-caption">Fullstack</p>
+                <a href="mailto:zimin.arte2014@yandex.ru" class="t-descr">zimin.arte2014@yandex.ru</a>
+            </div>
+
+            <div class="member">
+                <div class="member__photo">
+                    <img src="@img/avatars/ivan.png" alt="">
+                </div>
+                <p class="member__name t-h6">Иванов Иван</p>
+                <p class="member__position t-caption">Fullstack</p>
+                <a href="mailto:ivanov.v@yandex.ru" class="t-descr">ivanov.v@yandex.ru</a>
+            </div>
+
+            <div class="member">
+                <div class="member__photo">
+                    <img src="@img/avatars/piotr.png" alt="">
+                </div>
+                <p class="member__name t-h6">Петров Петр</p>
+                <p class="member__position t-caption">Fullstack</p>
+                <a href="mailto:petrov.p@yandex.ru" class="t-descr">petrov.p@yandex.ru</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contacts">
+        <div class="wrapper narrow">
+            <div class="t-h4 heading">
+                Контакты
+            </div>
+            <ul class="contacts__list">
+                <li class="contacts__item">
+                    <div class="item__icon">
+                        <svg>
+                            <use href="@img/icons/mail.svg#mail"></use>
+                        </svg>
+                    </div>
+                    <div class="item__info">
+                        <p class="t-p">Почта:</p>
+                        <a href="mailto:" class="t-h6">example@example.com</a>
+                    </div>
+                </li>
+
+                <li class="contacts__item">
+                    <div class="item__icon">
+                        <svg>
+                            <use href="@img/icons/phone.svg#phone"></use>
+                        </svg>
+                    </div>
+                    <div class="item__info">
+                        <p class="t-p">Телефон:</p>
+                        <a href="mailto:" class="t-h6">+7 983 442 34 23</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    @@include("html/contact-form.html", {})
+    <!-- contact form -->
+
+    @@include("html/footer.html", {})
+    <!-- Footer -->
+
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>

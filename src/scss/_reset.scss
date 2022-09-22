@@ -39,3 +39,8 @@ svg {
 body:has(.modal.opened) {
     overflow: hidden;
 }
+
+body:has(.header .header__interaction.opened) {
+    overflow: hidden;
+}
+

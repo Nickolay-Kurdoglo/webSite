@@ -171,8 +171,8 @@
 
 .article {
     display: flex;
-    width: 1064px;
-    height: 240px;
+    flex-flow: row wrap;
+    min-height: 240px;
     border-radius: 6px;
     overflow: hidden;
     box-shadow: $s-card-2;
@@ -183,8 +183,7 @@
     }
 
     &__preview {
-        width: 28%;
-        height: 100%;
+        flex: 1 1 250px;
 
         img {
             height: 100%;
@@ -194,8 +193,7 @@
     }
 
     &__content {
-        width: 72%;
-        height: 100%;
+        flex: 6 1 520px;
         padding: 16px;
         display: flex;
         flex-direction: column;

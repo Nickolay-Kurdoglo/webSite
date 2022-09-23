@@ -1,75 +1,76 @@
 <section class="modal" id="modal">
-    <div class="modal__filter"></div>
-    <div class="modal__container">
-        <svg class="modal__close">
-            <use href="@img/icons/close.svg#close"></use>
-        </svg>
-        <h3 class="t-h3">Свяжитесь с нами</h3>
-        <form action="" class="modal__form">
-            <div class="textField">
-                <label class="textField__label" for="name">Имя:</label>
-                <div class="textField__area">
-                    <input class="textField__input" type="text" placeholder="Введите имя" name="name" id="name">
-                    <svg>
-                        <use href="@img/icons/user.svg#user"></use>
-                    </svg>
+    <div class="wrapper">
+        <div class="modal__container">
+            <svg class="modal__close">
+                <use href="@img/icons/close.svg#close"></use>
+            </svg>
+            <h3 class="t-h3">Свяжитесь с нами</h3>
+            <form action="" class="modal__form">
+                <div class="textField">
+                    <label class="textField__label" for="name">Имя:</label>
+                    <div class="textField__area">
+                        <input class="textField__input" type="text" placeholder="Введите имя" name="name" id="name">
+                        <svg>
+                            <use href="@img/icons/user.svg#user"></use>
+                        </svg>
+                    </div>
+                    <div class="textField__error">
+                        <img src="@img/icons/alert-triangle.svg" alt="Ошибка">
+                        <p>Неверные данные</p>
+                    </div>
                 </div>
-                <div class="textField__error">
-                    <img src="@img/icons/alert-triangle.svg" alt="Ошибка">
-                    <p>Неверные данные</p>
-                </div>
-            </div>
 
-            <div class="textField">
-                <label class="textField__label" for="email">Почта:</label>
-                <div class="textField__area">
-                    <input class="textField__input" type="text" placeholder="Введите почту" name="email" id="email">
-                    <svg>
-                        <use href="@img/icons/mail.svg#mail"></use>
-                    </svg>
+                <div class="textField">
+                    <label class="textField__label" for="email">Почта:</label>
+                    <div class="textField__area">
+                        <input class="textField__input" type="text" placeholder="Введите почту" name="email" id="email">
+                        <svg>
+                            <use href="@img/icons/mail.svg#mail"></use>
+                        </svg>
+                    </div>
+                    <div class="textField__error">
+                        <img src="@img/icons/alert-triangle.svg" alt="Ошибка">
+                        <p>Неверные данные</p>
+                    </div>
                 </div>
-                <div class="textField__error">
-                    <img src="@img/icons/alert-triangle.svg" alt="Ошибка">
-                    <p>Неверные данные</p>
-                </div>
-            </div>
 
-            <div class="textField">
-                <label class="textField__label" for="phone">Телефон:</label>
-                <div class="textField__area">
-                    <input class="textField__input" type="text" placeholder="Введите телефон" name="phone" id="phone">
-                    <svg>
-                        <use href="@img/icons/phone.svg#phone"></use>
-                    </svg>
+                <div class="textField">
+                    <label class="textField__label" for="phone">Телефон:</label>
+                    <div class="textField__area">
+                        <input class="textField__input" type="text" placeholder="Введите телефон" name="phone" id="phone">
+                        <svg>
+                            <use href="@img/icons/phone.svg#phone"></use>
+                        </svg>
+                    </div>
+                    <div class="textField__error">
+                        <img src="@img/icons/alert-triangle.svg" alt="Ошибка">
+                        <p>Неверные данные</p>
+                    </div>
                 </div>
-                <div class="textField__error">
-                    <img src="@img/icons/alert-triangle.svg" alt="Ошибка">
-                    <p>Неверные данные</p>
-                </div>
-            </div>
 
-            <div class="textField">
-                <label class="textField__label" for="comment">Ваш комментарий:</label>
-                <div class="textField__area">
+                <div class="textField">
+                    <label class="textField__label" for="comment">Ваш комментарий:</label>
+                    <div class="textField__area">
                     <textarea class="textField__input" type="text" placeholder="Комментарий..." name="comment"
-                        id="comment"></textarea>
-                    <svg>
-                        <use href="@img/icons/comment.svg#comment"></use>
-                    </svg>
+                              id="comment"></textarea>
+                        <svg>
+                            <use href="@img/icons/comment.svg#comment"></use>
+                        </svg>
+                    </div>
+                    <div class="textField__error">
+                        <img src="@img/icons/alert-triangle.svg" alt="Ошибка">
+                        <p>Неверные данные</p>
+                    </div>
                 </div>
-                <div class="textField__error">
-                    <img src="@img/icons/alert-triangle.svg" alt="Ошибка">
-                    <p>Неверные данные</p>
+
+                <div class="checkbox">
+                    <input type="checkbox" id="cbx-1">
+                    <label class="checkbox__label" for="cbx-1">Я согласен на обработку персональных данных</label>
                 </div>
-            </div>
 
-            <div class="checkbox">
-                <input type="checkbox" id="cbx-1">
-                <label class="checkbox__label" for="cbx-1">Я согласен на обработку персональных данных</label>
-            </div>
+                <button class="btn btn-primary" type="submit">Отправить</button>
 
-            <button class="btn btn-primary" type="submit">Отправить</button>
-
-        </form>
+            </form>
+        </div>
     </div>
 </section>

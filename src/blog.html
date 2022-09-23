@@ -2,7 +2,7 @@
 <html lang="ru">
 
 @@include("html/head.html", {
-"title" : "Главная"
+"title" : "Блог"
 })
 
 <body>
@@ -16,9 +16,9 @@
     <!-- Header -->
 
     <section class="blog-filter">
-        <div class="wrapper blog-filter__categories">
+        <div class="wrapper narrow blog-filter__categories">
             <h2 class="t-h2">Блог</h2>
-            <ul class="blog-filter__list">
+            <ul class="blog-filter__list" id="categories">
                 <li class="category active">
                     <a class="t-h5" href="#">Все</a>
                 </li>
@@ -37,7 +37,7 @@
             </ul>
         </div>
         <div class="blog-filter__tags tags">
-            <div class="wrapper">
+            <div class="wrapper narrow">
                 <ul class="tags__list">
                     <li class="tag">
                         <input name="tag" id="markup" type="checkbox">
@@ -51,6 +51,7 @@
                         <input name="tag" id="backend" type="checkbox">
                         <label for="backend">Backend</label>
                     </li>
+
                 </ul>
             </div>
         </div>
@@ -61,7 +62,7 @@
     </div>
 
     <main class="articles">
-        <div class="wrapper articles__container">
+        <div class="wrapper narrow articles__container">
 
             <article class="article">
                 <div class="article__preview">

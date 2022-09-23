@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include("html/head.html", {
+"title" : "Интернет-магазин"
+})
+
+<body>
+
+<button class="btn btn-float btn-shining js-open-modal">Свяжитесь с нами</button>
+
+@@include("html/modal.html", {}) <!-- modal -->
+
+@@include("html/header.html", {}) <!-- Header -->
+
+@@include("html/service_offer.html",{
+    "service_name": "Интернет-магазин"
+}) <!-- Service offer -->
+
+<section class="service-descriprion">
+    <div class="wrapper narrow">
+        <div class="t-h4 heading">
+            Описание
+        </div>
+        <p class="t-p">
+            В частности, укрепление и развитие внутренней структуры позволяет выполнить важные задания по разработке прогресса профессионального сообщества. Равным образом, дальнейшее развитие различных форм деятельности требует определения и уточнения системы обучения кадров, соответствующей насущным потребностям. Не следует, однако, забывать, что начало повседневной работы по формированию позиции говорит.
+        </p>
+    </div>
+</section>
+
+@@include("html/services.html", {
+    "service_heading": "Другие виды услуг"
+}) <!-- servicePages -->
+
+@@include("html/contact-form.html", {}) <!-- contact form -->
+
+@@include("html/footer.html", {}) <!-- Footer -->
+
+<script src="js/script.min.js"></script>
+</body>
+
+</html>

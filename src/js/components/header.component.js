@@ -16,5 +16,10 @@ export class HeaderComponent extends Component {
         closeMenu.addEventListener("click", () => {
             this.$el.querySelector(".header__interaction").classList.remove("opened");
         })
+
+        this.$el.addEventListener("click", event => {
+            if (event.target.classList.contains("header__filter"))
+                this.$el.querySelector(".header__interaction").classList.remove("opened");
+        })
     }
 }

@@ -33,12 +33,6 @@
     }
 
     &__video {
-        z-index: -12;
-        position: absolute;
-        top: 0;
         right: -224px;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
     }
 }

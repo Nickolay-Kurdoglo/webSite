@@ -3,12 +3,19 @@
     &__categories {
         display: flex;
         justify-content: space-between;
+        gap: 24px;
         align-items: baseline;
     }
 
     &__list {
         display: flex;
         gap: 24px;
+
+        overflow-x: scroll;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
 
     .category {
@@ -19,10 +26,9 @@
         }
     }
 
-    .wrapper {
-        max-width: 1112px;
+    .tags__list {
+        flex-wrap: wrap;
     }
-
 }
 
 .blog-separator {
@@ -34,8 +40,8 @@
 
     &__container {
         display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-        gap: 48px;
+        flex-flow: row wrap;
+
+        gap: 48px 24px;
     }
 }

@@ -1,4 +1,4 @@
-body:has(.offer) .header {
+body:has(.offer, .service-offer) .header {
     position: absolute;
     top: 0;
     left: 0;
@@ -56,7 +56,6 @@ body:has(.offer) .header {
         }
 
         &__interaction {
-            display: none;
             padding: 24px 40px;
             position: fixed;
             z-index: 20001;

@@ -23,6 +23,7 @@
 
     &:hover {
         background-color: #295CE1;
+        
     }
     
     &:active {
@@ -43,6 +44,7 @@
         color: #FFFFFF;
         background-color: #497AFA;
         border: 1px solid #497AFA;
+        
     }
     
     &.outlined:active {
@@ -67,3 +69,6 @@
 
 }
 
+a.btn {
+    display: inline-block;
+}

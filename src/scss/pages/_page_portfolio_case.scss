@@ -1,0 +1,53 @@
+.fullCase {
+    &__header {
+        margin: 40px 0 64px 0;
+    }
+
+    &__title {
+        .wrapper {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px 32px;
+
+            .t-h3  {
+                flex: 25 1 auto;
+            }
+
+            .btn {
+                flex: 1 1 220px;
+                padding: 10px 16px 10px 24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+
+                svg {
+                    stroke: $c-primary;
+                }
+
+                &:hover {
+                    svg {
+                        stroke: #FFF;
+                    }
+                }
+            }
+        }
+    }
+
+    &__info {
+        margin: 16px 0 0 0;
+
+        .wrapper {
+            display: flex;
+        }
+
+        .tag-wrapper {
+            margin: 0 0 0 72px;
+            display: flex;
+            gap: 16px;
+        }
+    }
+}
+

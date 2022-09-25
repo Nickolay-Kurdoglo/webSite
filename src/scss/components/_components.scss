@@ -29,3 +29,31 @@
 @import "modal";
 
 @import "service_offer";
+
+.article-image {
+    margin: 32px 0;
+
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+
+    &__descr {
+        margin: 4px 0 0 0;
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+.dot-pattern {
+    position: absolute;
+    z-index: -2;
+
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background: radial-gradient(circle, $c-light-blue-80 0%, $c-light-blue-80 8%, #295ce100 8%);
+    background-size: 24px 24px;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include("html/head.html", {
+"title" : "Блог"
+})
+
+<body>
+
+    <button class="btn btn-float btn-shining js-open-modal">Свяжитесь с нами</button>
+
+    @@include("html/modal.html", {})
+    <!-- modal -->
+
+    @@include("html/header.html", {})
+    <!-- Header -->
+
+    <section class="breadcrumb">
+        <div class="wrapper">
+
+        </div>
+    </section>
+
+    <div class="dot-pattern"></div>
+
+    <article class="fullArticle">
+        <div class="wrapper narrow">
+            <div class="fullArticle__header">
+                <ul class="tags__list">
+                    <li class="tag">
+                        <input name="tag" id="markup" type="checkbox">
+                        <label for="markup">Верстка</label>
+                    </li>
+                    <li class="tag">
+                        <input name="tag" id="design" type="checkbox">
+                        <label for="design">Дизайн</label>
+                    </li>
+                    <li class="tag">
+                        <input name="tag" id="backend" type="checkbox">
+                        <label for="backend">Backend</label>
+                    </li>
+                </ul>
+                <div class="fullArticle__info">
+                    <div class="fullArticle__title">
+                        <h3 class="t-h3">Лучшие редакторы кода</h3>
+                        <p class="t-caption">22 февраля 2022</p>
+                    </div>
+                    <div class="fullArticle__author">
+                        <div class="photo">
+                            <img src="@img/avatars/ivan.png" alt="">
+                        </div>
+                        <div>
+                            <p class="name t-h6">Петров Иван</p>
+                            <p class="t-caption">разработчик</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="fullArticle__body">
+
+                <h5 class="t-h5">
+                    VS Code
+                </h5>
+
+                <p class="t-p">
+                    В своём стремлении улучшить пользовательский опыт мы упускаем, что многие известные личности, вне зависимости от их уровня, должны быть ассоциативно распределены по отраслям. Являясь всего лишь частью общей картины, элементы политического процесса.
+                </p>
+
+                <figure class="article-image">
+                    <img src="@img/cases/developing.png" alt="">
+                    <figcaption class="article-image__descr">Процесс разработки главной страницы</figcaption>
+                </figure>
+
+                <h5 class="t-h5">
+                    Sublime text 4
+                </h5>
+
+                <p class="t-p">
+                    В своём стремлении улучшить пользовательский опыт мы упускаем, что многие известные личности, вне зависимости от их уровня, должны быть ассоциативно распределены по отраслям. Являясь всего лишь частью общей картины, элементы политического процесса.
+                </p>
+
+                <figure class="article-image">
+                    <img src="@img/cases/developing_sublime.png" alt="">
+                    <figcaption class="article-image__descr">Процесс разработки главной страницы</figcaption>
+                </figure>
+
+            </div>
+        </div>
+    </article>
+
+    @@include("html/footer.html", {})
+    <!-- Footer -->
+
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>

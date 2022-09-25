@@ -1,3 +1,14 @@
 .service-descriprion {
     margin: $sz-btw-block;
 }
+
+.technologies {
+    margin: $sz-btw-block;
+
+    &__container {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+        flex: row wrap;
+    }
+}
